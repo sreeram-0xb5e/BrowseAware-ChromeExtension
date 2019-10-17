@@ -1,7 +1,7 @@
 var options = {
 	type: "basic",
 	title: "Nudge",
-	message: "Item added successfully",
+	message: "You seem to be diverted!!!",
 	iconUrl: "images/1.png",
 	buttons: [{
             title: "Yes, I'm diverted",
