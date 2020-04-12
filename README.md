@@ -1,14 +1,14 @@
-# browseAware (Beta)
+# BrowseAware-ChromeExtension
 
 Version: 19.1
-#### What is browseAware?
+#### What is BrowseAware?
 
-browseAware is a chrome extension built to aid users from getting diverted while they browse.
+BrowseAware is a chrome extension built to aid users from getting diverted while they browse.
 
 
-#### Why should I use browseAware?
+#### Why should I use BrowseAware?
 
-The web is filled with services that has distracting ads and functionalities (like Autoplay) to make the users spend more and more time in their website. The users are also shown targeted Ads and articles. Our survey and initial analysis showed that a lot of users feel that they are getting distracted while they browse. Our survey also showed that they will be interested in a tool that can help them to overcome this. browseAware is a tool that can help you stay focused and productive while you browse.
+The web is filled with services that has distracting ads and functionalities (like Autoplay) to make the users spend more and more time in their website. The users are also shown targeted Ads and articles. Our survey and initial analysis showed that a lot of users feel that they are getting distracted while they browse. Our survey also showed that they will be interested in a tool that can help them to overcome this. BrowseAware is a tool that can help you stay focused and productive while you browse.
 
 
 ---
