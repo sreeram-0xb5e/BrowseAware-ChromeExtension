@@ -20,7 +20,7 @@ setInterval(function(){
                         Http.open("GET", url);
                         Http.send();
                         Http.onreadystatechange=(e)=>{
-                            if (Number(Http.responseText) >= 5) {
+                            if (Number(Http.responseText) >= 1) {
                                 var opt = options;
                                 chrome.notifications.create('itemAdd',
                                                             opt,
@@ -42,7 +42,7 @@ chrome.notifications.onButtonClicked.addListener(function(notifId, btnIdx) {
                         };
         } else if (btnIdx === 1) {
             const Http = new XMLHttpRequest();
-                        const url='http://128.199.194.208:8000/nudge_feedback_not_diverted';
+                        const url='http://128.199.148.75:8000/nudge_feedback_not_diverted';
                         Http.open("GET", url);
                         Http.send();
                         Http.onreadystatechange=(e)=>{
