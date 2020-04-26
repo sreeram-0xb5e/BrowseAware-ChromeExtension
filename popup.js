@@ -15,7 +15,7 @@ function addBookmark() {
     event.preventDefault();
 
     // The URL to POST our data to
-    var postUrl = 'http://128.199.194.208:8000/login';
+    var postUrl = 'http://128.100.148.75:8000/login';
 
     // Set up an asynchronous AJAX POST request
     var xhr = new XMLHttpRequest();
@@ -64,7 +64,7 @@ function clickDiverted()
 {
 
   var xhr = new XMLHttpRequest();
-  xhr.open("GET", "http://128.199.194.208:8000/diverted", false);
+  xhr.open("GET", "http://128.100.148.75:8000/diverted", false);
   xhr.send();
 
   var result = xhr.responseText;

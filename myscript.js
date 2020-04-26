@@ -1,25 +1,13 @@
-function showStatus()
-{
-  var xhr = new XMLHttpRequest();
-  xhr.open("GET", "http://128.199.194.208:8000/status", false);
-  xhr.send();
-  var result = xhr.responseText;
-  return result
-}
-
-document.getElementById("statusflag").innerHTML = showStatus();
-
-
 function clickDiverted()
 {
 
   var xhr = new XMLHttpRequest();
-  xhr.open("GET", "http://128.199.194.208:8000/diverted", false);
+  xhr.open("GET", "http://128.100.148.75:8000/diverted", false);
   xhr.send();
   var result = xhr.responseText;
 
   var stat = new XMLHttpRequest();
-  xhr.open("GET", "http://128.199.194.208:8000/status", false);
+  xhr.open("GET", "http://128.100.148.75:8000/status", false);
   xhr.send();
   var stat_res = xhr.responseText;
 
@@ -41,12 +29,12 @@ function clickDiverted()
  {
 
    var xhr = new XMLHttpRequest();
-   xhr.open("GET", "http://128.199.194.208:8000/notdiverted", false);
+   xhr.open("GET", "http://128.100.148.75:8000/notdiverted", false);
    xhr.send();
    var result = xhr.responseText;
 
    var stat = new XMLHttpRequest();
-   xhr.open("GET", "http://128.199.194.208:8000/status", false);
+   xhr.open("GET", "http://128.100.148.75:8000/status", false);
    xhr.send();
    var stat_res = xhr.responseText;
 
@@ -67,7 +55,7 @@ function clickDiverted()
   {
 
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "http://128.199.194.208:8000/logout", false);
+    xhr.open("GET", "http://128.100.148.75:8000/logout", false);
     xhr.send();
     var result = xhr.responseText;
 
@@ -79,7 +67,7 @@ function clickDiverted()
 
 
    document.getElementById("redirect_button").onclick = function () {
-          chrome.windows.create({url: "http://128.199.194.208:8000/feedback"});
+          chrome.windows.create({url: "http://128.100.148.75:8000/feedback"});
        };
 
     document.getElementById("logout_button").addEventListener('click', clicklogout);
