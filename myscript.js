@@ -22,6 +22,7 @@ function clickDiverted()
 
 }
 
+
  document.getElementById("diverted_button").addEventListener('click', clickDiverted);
 
 
@@ -63,6 +64,7 @@ function clickDiverted()
 
   }
 
+ 
    document.getElementById("logout_button").addEventListener('click', clicklogout);
 
 
@@ -71,3 +73,6 @@ function clickDiverted()
        };
 
     document.getElementById("logout_button").addEventListener('click', clicklogout);
+
+
+
