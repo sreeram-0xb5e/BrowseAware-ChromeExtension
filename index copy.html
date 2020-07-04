@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Browse Aware</title>
+
+    <link rel="stylesheet" href="custom.css">
+
+    <script type="text/javascript" src="background.js"></script>
+
+    <!-- LIBRARY FILES -->
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <!--Import materialize.css-->
+    <!--<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>-->
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="popup.js"></script>
+
+</head>
+
+<body class="body" style="width: 350px;">
+  <!--Header Semantic-->
+
+  <div class="ui fixed inverted menu">
+    <div class="ui container">
+      <a href="#" class="header item">
+        Browser Aware
+      </a>
+      <a href="#" class="item">Home</a>
+      <div class="ui simple dropdown item">
+        Dropdown <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item" href="#">Link Item</a>
+          <a class="item" href="#">Link Item</a>
+          <div class="divider"></div>
+          <div class="header">Header Item</div>
+          <div class="item">
+            <i class="dropdown icon"></i>
+            Sub Menu
+            <div class="menu">
+              <a class="item" href="#">Link Item</a>
+              <a class="item" href="#">Link Item</a>
+            </div>
+          </div>
+          <a class="item" href="#">Link Item</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+  <!-- LOGO OF THE APPLICATION -->
+  <!-- <div style="margin-left:100px; margin-top:-50px; margin-bottom:-50px;"/><img src="/images/washi-dark.png" width="250px"> </div> -->
+
+
+  <!-- CARD -->
+  <div style="margin:1rem; margin-top:2rem; top:-20px; ">
+    <div class="card blue-grey">
+      <div class="card-content white-text">
+      <span class="card-title">Browse Aware</span>
+      <p></p>
+      <br/>
+      <p></p>
+      </div>
+      <!--Tabs of the card-->
+      <div class="card-tabs">
+      <ul class="tabs tabs-fixed-width blue-grey white-text">
+        <li class="tab"><a class="active" href="#test4">Status</a></li>
+        <li class="tab"><a href="#test5">Login</a></li>
+        <!--<li class="tab"><a href="#test6">Feedback</a></li>-->
+      </ul>
+      </div>
+
+      <!-- Card Content-->
+      <div class="card-content grey lighten-4">
+        <!-- STATUS CONTENT-->
+        <div id="test4">
+          <b><p id="statusflag">Please Login</p></b><br/>
+          <b><p>Current Session: <span id="sessionNumber"></span></p></b><br/>
+          <div id="button_area"></div>
+        </div>
+
+
+      <!--LOGIN PAGE CONTENT-->
+      <div id="test5">
+        <div class="row">
+          <form class="col s12" id="addbookmark" >
+
+            <!-- Email Field -->
+            <div class="row">
+             <div class="input-field col s12">
+               <input id="username" name="username" type="text" value="">
+                 <label for="Email">Username</label>
+             </div>
+           </div>
+
+            <!-- Password Field-->
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="password" name="password" type="password" value="">
+                  <label for="password" >Password</label>
+              </div>
+            </div>
+
+            <!--Submit Button-->
+            <input class="waves-effect waves-light btn" style="position:relative;width:100%;top:-0.5rem;" id="save" type="submit" value="Login" />
+          </form>
+          <br/>
+          <span id="status-display"></span>
+        </div>
+      </div>
+
+      <!-- FEEDBACK PAGE CONTENT -->
+      <div id="test6">
+        Are you Diverted now?
+        <br/>
+        <br/>
+
+        <button class = "waves-effect red accent-1 btn" style="position: relative;" id="diverted_button"> Diverted </button>
+
+        <button class = "waves-effect waves-light btn" style="position: relative;" id= "not_diverted_button"> Not Diverted </button>
+        <br/>
+        <br/>
+        <p id="feedbackstatusflag">   </p>
+        <br/>
+        Analyse My Diversion (Use a non-chrome browser to open this link)
+        <br/>
+        <br/>
+        <button id="redirect_button" class = "waves-effect red accent-1 btn" style="position: relative;" >Analyse </button>
+        <br/>
+        <br/>
+        Do You want to LogOut?
+        <br/>
+        <br/>
+        <button class = "waves-effect red accent-1 btn" style="position: relative;" id="logout_button"> LogOut </button>
+        <br/>
+        <br/>
+        <p id="feedbacklogoutflag">   </p>
+
+      </div>
+
+
+      </div>
+
+    </div>
+</div>
+
+</body>
+ <script src="myscript.js"></script>
+
+
+</html>
