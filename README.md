@@ -3,12 +3,12 @@
 Version: 19.1
 #### What is BrowseAware?
 
-BrowseAware is a chrome extension built to help users stay focussed while browsing.
+BrowseAware is a chrome extension built to help its users stay focussed while browsing.
 
 
 #### Why should I use BrowseAware?
 
-The web is filled with services that has distracting ads and functionalities (like Autoplay) to make the users spend more and more time in their website. The users are also shown targeted Ads and articles. Our survey and initial analysis showed that a lot of users feel that they are getting distracted while they browse. Our survey also showed that they will be interested in a tool that can help them to overcome this. BrowseAware is a tool that can help you stay focused and productive while you browse.
+The internet has many services that sell advertisements to keep running. Personlised content and functionalities like autoplay keeps the users engaged in a particilar site for a longer period of time. Our survey and initial analysis showed us that many of them get distracted by the advertisements and personalised content. Our survey also showed us that many of them are open to try a tool that can help stay focused while browsing. BrowseAware is a tool that can help its users stay focused and productive while you browsing.
 
 
 ---
@@ -25,8 +25,8 @@ The web is filled with services that has distracting ads and functionalities (li
 4. Go to settings and click the Extension     or just type "chrome://extensions/" in the URL tab.
 5. Check the "Developer mode" checkbox
 6. Click the "Load unpacked extension" button and load the unziped folder
-7.You should see the extension added in the top right corner of your browser.
-8.  BOOM...Login into the Extension and stay Productive
+7. You should see the extension added in the top right corner of your browser.
+8. Login to the chrome extension.
 
 #### How to analyse my level of diversion?
 
