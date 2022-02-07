@@ -3,7 +3,7 @@
 Version: 19.1
 #### What is BrowseAware?
 
-BrowseAware is a chrome extension built to aid users from getting diverted while they browse.
+BrowseAware is a chrome extension built to help users stay focussed while browsing.
 
 
 #### Why should I use BrowseAware?
