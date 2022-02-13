@@ -8,7 +8,7 @@ BrowseAware is a chrome extension built to help its users stay focussed while br
 
 #### Why should I use BrowseAware?
 
-The internet has many services that sell advertisements to keep running. Personlised content and functionalities like autoplay keeps the users engaged in a particilar site for a longer period of time. Our survey and initial analysis showed us that many of them get distracted by the advertisements and personalised content. Our survey also showed us that many of them are open to try a tool that can help stay focused while browsing. BrowseAware is a tool that can help its users stay focused and productive while you browsing.
+The internet has many services that sell advertisements to keep running. Personalised content and functionalities like autoplay keep the users engaged in a particular site for a longer period of time. Our survey and initial analysis showed us that many of them get distracted by advertisements and personalised content. Our survey also showed us that many of them are open to trying a tool that can help them stay focused while browsing. BrowseAware is a tool that can help its users stay focused and productive while you browsing.
 
 
 ---
